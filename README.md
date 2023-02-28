@@ -37,7 +37,7 @@ Instrucciones originales del proyecto [aquí](https://github.com/soyHenry/PF_DS/
 |Blas De Olano|blas.deolano@gmail.com    |[fdbo](https://www.linkedin.com/in/fbdo/)|
 |Alejandro del Gerbo  |adelgerbo@gmail.com   |[alejandro-del-gerbo](https://www.linkedin.com/in/alejandro-del-gerbo-actis-30523225/)|
 |Nahuel Vargas  |naguieta@gmail.com|[nahuelvargas](https://www.linkedin.com/in/nahuelvargas/)|
-|Cristian Garcia   |cristiangarcia0716@gmail.com   |[]()|
+|Cristian Garcia   |cristiangarcia0716@gmail.com   |[alemax](https://www.linkedin.com/in/alemax019/)|
 |Yamila Galiano   |yami_cba7@hotmail.com     |[yamila-galiano](https://www.linkedin.com/in/yamila-galiano-ba7083121/)|  
 
 # **Datos**
