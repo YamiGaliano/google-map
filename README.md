@@ -2,7 +2,7 @@
 
 # **Henry Final Project - Group Nº1**
 
-# <h1 align="center">**`EXPERIENCE FINDER`**</h1>
+# <h1>**`EXPERIENCE FINDER`**</h1>
 
 ![LOGO](images/WhiteBlackLogo.png) 
 
