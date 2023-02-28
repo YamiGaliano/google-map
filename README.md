@@ -46,7 +46,7 @@ Datasets externos:
 - [Places API](https://developers.google.com/maps/documentation/places/web-service?hl=es-419)
 - [Cities](https://www.kaggle.com/datasets/louise2001/us-cities?resource=download)</p> 
 
-Fuentes extras para sumar al analisis:
+Fuentes extras para sumar al análisis:
 - [Worlddata](https://www.worlddata.info/america/usa/tourism.php)
 - [bloomberg](https://www.bloomberg.com/news/articles/2022-10-14/tourism-not-business-travel-fuels-higher-revenue-for-cities)
 - [cnbc](https://www.cnbc.com/2022/11/09/fastest-growing-us-cities-kenan-institute.html)
