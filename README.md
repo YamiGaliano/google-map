@@ -70,4 +70,4 @@ Video del proyecto [aquí]()
 Informe final [aquí](documents/Informefinal-Grupo1.pdf)
 
 ## **Documentation**
-Documentación del proyecto [aquí](documents/EF-Documentación.pdf)
+Documentación del proyecto [aquí](https://github.com/YamiGaliano/google-map/blob/32264360de2f11050ff4b33fdafd96a7c70c2de2/documents/EF-Documentacio%CC%81n.pdf)
