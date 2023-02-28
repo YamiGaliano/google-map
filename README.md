@@ -67,7 +67,7 @@ Link a nuestra app de recomendaciones [aquí]().
 Video del proyecto [aquí]()
 
 ## **Informe final entregado a la empresa**
-Informe final [aquí](documents/Informefinal-Grupo1.pdf)
+Informe final [aquí](https://github.com/YamiGaliano/google-map/blob/32264360de2f11050ff4b33fdafd96a7c70c2de2/documents/Informefinal-Grupo1.pdf)
 
 ## **Documentation**
 Documentación del proyecto [aquí](https://github.com/YamiGaliano/google-map/blob/32264360de2f11050ff4b33fdafd96a7c70c2de2/documents/EF-Documentacio%CC%81n.pdf)
