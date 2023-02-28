@@ -41,7 +41,7 @@ Instrucciones originales del proyecto [aquí](https://github.com/soyHenry/PF_DS/
 |Yamila Galiano   |yami_cba7@hotmail.com     |[yamila-galiano](https://www.linkedin.com/in/yamila-galiano-ba7083121/)|  
 
 # **Datos**
-Los datos se obtuvieron de un dataset provisto por Henry. Puede acceder a ellos desde el siguiente [link](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA). Estos datos fueron unificados y analizados mediantes un EDA y un [ETL](https://github.com/YamiGaliano/google-map/blob/32264360de2f11050ff4b33fdafd96a7c70c2de2/ETL). </p> 
+Los datos se obtuvieron de un dataset provisto por Henry. Puede acceder a ellos desde el siguiente [link](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA). Estos datos fueron unificados y analizados mediantes un EDA y un [ETL](https://github.com/YamiGaliano/google-map/tree/main/ETL). </p> 
 Datasets externos:
 - [Places API](https://developers.google.com/maps/documentation/places/web-service?hl=es-419)
 - [Cities](https://www.kaggle.com/datasets/louise2001/us-cities?resource=download)</p> 
