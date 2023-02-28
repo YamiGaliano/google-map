@@ -67,7 +67,7 @@ Link a nuestra app de recomendaciones [aquí]().
 Video del proyecto [aquí]()
 
 ## **Informe final entregado a la empresa**
-Informe final [aquí]()
+Informe final [aquí](documents/Informe final - Grupo 1.pdf)
 
 ## **Documentation**
-Documentación del proyecto [aquí]()
+Documentación del proyecto [aquí](documents/EF - Documentación.pdf)
