@@ -61,7 +61,7 @@ Tras analizar las opciones disponibles online para nuestra infraestructura, deci
 - - -
 Link de nuestro dashboard [aquí](https://drive.google.com/drive/u/1/folders/1LtEy0DHGqd9iHBS1JobLgSw0_-RyfSMd). 
 
-Link a nuestra app de recomendaciones [aquí](https://github.com/YamiGaliano/google-map/Streamlit). 
+Link a nuestra app de recomendaciones [aquí](https://github.com/YamiGaliano/google-map/tree/main/Streamlit). 
 
 ## **Video**
 Video del proyecto [aquí]()
