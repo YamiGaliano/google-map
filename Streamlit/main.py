@@ -6,6 +6,7 @@ from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 import math
+#Definiciones globales
 country = "United States"
 city = ""
 etiqueta = ""
@@ -13,7 +14,7 @@ def delstate():
     if "etiquet" in st.session_state:
         del st.session_state.etiquet
 if __name__ == '__main__':
-    
+    #correccion de espaciado en Stramlit
     st.write('<style>div.block-container{padding-top:1.5rem;}</style>', unsafe_allow_html=True)
     
     if "visibility" not in st.session_state:
@@ -25,13 +26,13 @@ if __name__ == '__main__':
     st.sidebar.markdown(new_title, unsafe_allow_html=True)
     st.sidebar.markdown(new_image, unsafe_allow_html=True)
 
-
+    #Definir usuarios del dataset
     userdict = {"Philip Wunderlich": "113381142542018467294",
                 "Mike Johnson" : "115330754707742864419", 
                 "William Gilane Jr" : "112782794276785059993", 
                 "Phil Yelton" : "102657099077047497420",
                 "Justin Caldwell" : "107705240711231122119"}
-
+    #Creacion de elementos en la barra lateral de Streamlit
     user = st.sidebar.selectbox(
             "Elija Usuario: ",
             ("Philip Wunderlich", "Mike Johnson", "William Gilane Jr", "Phil Yelton", "Justin Caldwell"),
@@ -40,22 +41,21 @@ if __name__ == '__main__':
         )
     user_id = userdict[user]
     radio = st.sidebar.slider("Seleccione radio de búsqueda en metros:", min_value = 0, max_value = 2000, step = 1, value = 500)
-    #st.sidebar.write('Values:', values)
+    #definicion del formato de los markdown
     iframeperson = folium.IFrame('<b>' + str(user) + '</b> <br> Estás aquí')
     popupperson = folium.Popup(iframeperson, min_width=300, max_width=300)
-
-
+    #Inicializacion de geopy
     geolocator = Nominatim(user_agent="GTA Lookup")
     geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
-    #location = geolocator.geocode(city)
     location = geolocator.geocode(city+", "+country)
     zoomvalue =4
     lat = location.latitude
     lon = location.longitude
-    print("Primer geoloc " + str(lat) + " " + str(lon) + city+", "+country)
+    #Configuracion inicial del mapa de folium
     m = folium.Map(location=[lat, lon], zoom_start=25)
     fg = folium.FeatureGroup(name="Markers")
     x = st.empty()
+    #Definicion de columnas
     c1, c2= st.columns([7, 1])
     with c1:
         if "etiquet" in st.session_state:
@@ -64,23 +64,21 @@ if __name__ == '__main__':
         if "etiquet" in st.session_state:
             city = st.session_state.etiquet.address
     with c2:
-        #st.write("##")
+        #Deginicion del boton de busqueda y su accion
         if st.button("Buscar", key="busca"):  
-            #display_user()
             userid = user_id
             name = str()
-            #location = geolocator.geocode(city+", "+country)
             location = geolocator.geocode(city)
             lat = location.latitude
             lon = location.longitude
-            print("Boton geoloc " + str(lat) + " " + str(lon) + city+", "+country)
-            print("Boton etiqueta: " + etiqueta)
+
             #Busqueda API PLACES y Carga Incremental
             #searchload(lat, lon, radio)
+            #Busqueda en el dataset y filtro de BigQuery ML
             dfquery = searchdb(float(lat), float(lon), userid, radio)
-            #conexion ML
-            zoomvalue = 16
 
+            zoomvalue = 16
+            #Nueva ubicacion de busqueda
             fg.add_child(
                 folium.Marker(
                     [lat, lon], 
@@ -89,7 +87,7 @@ if __name__ == '__main__':
                     icon=folium.Icon(color="red", prefix='fa', icon='fa-user-circle-o'),
                 )
             )
-            
+            #Crear los markdown de los elementos encontrados
             for ind in dfquery.index:
                 if (math.isnan(dfquery['predicted_rating'][ind])):
                     fg.add_child(
@@ -101,7 +99,6 @@ if __name__ == '__main__':
                         )
                     )
                 else:
-                    #print(dfquery['predicted_rating'][ind])
                     fg.add_child(
                         folium.Marker(
                         [dfquery['latitude'][ind], dfquery['longitude'][ind]], 
@@ -119,26 +116,20 @@ if __name__ == '__main__':
         icon=folium.Icon(color="red", prefix='fa', icon='fa-user-circle-o'),
         )
     )
-    print("folium 116, zoom = " + str(zoomvalue) )
-    print("Ultimo geoloc " + str(lat) + " " + str(lon) + city+", "+country)
+    #Carga del mapa de folium
     output = st_folium(
         m,     
         center=[lat,lon],
         zoom=zoomvalue,
         key="map",feature_group_to_add=fg, width=700, height=400, returned_objects=["last_clicked"]
     )
-
+    #Definicion del click en el mapa
     if output:
         try:
             if output["last_clicked"] != "":
                 coordenadas = str(output["last_clicked"]["lat"]) + ", " + str(output["last_clicked"]["lng"])
-                print("etiquetaul: " + etiqueta)
-                print("coordenadas: " + coordenadas)
                 st.session_state.etiquet = geolocator.reverse(coordenadas)
                 x.text_input("Ingrese ciudad: ", st.session_state.etiquet)
-                #etiqueta = geolocator.reverse(coordenadas)
-                print("etiquetaul: " + etiqueta)
                 city = st.session_state.etiquet
-                #x.text_input("Ingrese ciudad: ", city)
         except:
             print("clave no encontrada")
