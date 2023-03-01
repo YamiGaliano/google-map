@@ -69,5 +69,15 @@ Video del proyecto [aquí]()
 ## **Informe final entregado a la empresa**
 Informe final [aquí](https://github.com/YamiGaliano/google-map/blob/32264360de2f11050ff4b33fdafd96a7c70c2de2/documents/Informefinal-Grupo1.pdf)
 
+## **Presentaciones**
+### **Semana #1**
+https://tome.app/51r0b/ef-semana-1-cldxe7c0y05dgbzv2l2z8t5bf
+### **Semana #2**
+https://tome.app/51r0b/ef-semana-2-copy-cle8ou2ia0lgk1pq0p0j45a30
+### **Semana #3**
+https://tome.app/51r0b/ef-semana-3-copy-clej3szcr00kf3u41vblhzbt0
+### **Semana #4 [DEMO]**
+https://tome.app/51r0b/ef-semana-4-cleohyei30k3f7xk3zsj4u6u8
+
 ## **Documentation**
 Documentación del proyecto [aquí](https://github.com/YamiGaliano/google-map/blob/32264360de2f11050ff4b33fdafd96a7c70c2de2/documents/EF-Documentacio%CC%81n.pdf)
