@@ -59,7 +59,7 @@ Fuentes extras para sumar al análisis:
 Tras analizar las opciones disponibles online para nuestra infraestructura, decidimos utilizar los servicios de Google Cloud Platform.
 ![stack](images/stack.png)
 - - -
-Link de nuestro dashboard [aquí](https://drive.google.com/drive/u/1/folders/1LtEy0DHGqd9iHBS1JobLgSw0_-RyfSMd). 
+Link de nuestro dashboard [aquí](https://drive.google.com/drive/folders/1ojvN_V4K6t7DkxW6U8tPXXtY6nUusGrq?usp=share_link). 
 
 Link a nuestra app de recomendaciones [aquí](https://github.com/YamiGaliano/google-map/tree/main/Streamlit). 
 
