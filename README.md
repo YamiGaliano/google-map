@@ -64,7 +64,7 @@ Link de nuestro dashboard [aquí](https://drive.google.com/drive/folders/1ojvN_V
 Link a nuestra app de recomendaciones [aquí](https://github.com/YamiGaliano/google-map/tree/main/Streamlit). 
 
 ## **Video**
-Video del proyecto [aquí]()
+Video del proyecto [aquí](https://www.youtube.com/watch?v=f7SfD3AGPew&ab_channel=Alejandro))
 
 ## **Informe final entregado a la empresa**
 Informe final [aquí](https://github.com/YamiGaliano/google-map/blob/32264360de2f11050ff4b33fdafd96a7c70c2de2/documents/Informefinal-Grupo1.pdf)
@@ -78,6 +78,8 @@ https://tome.app/51r0b/ef-semana-2-copy-cle8ou2ia0lgk1pq0p0j45a30
 https://tome.app/51r0b/ef-semana-3-copy-clej3szcr00kf3u41vblhzbt0
 ### **Semana #4 [DEMO]**
 https://tome.app/51r0b/ef-semana-4-cleohyei30k3f7xk3zsj4u6u8
+### **Semana #4 Business Boosters**
+https://tome.app/51r0b/business-boosters-clerfq4bg07g94r329nobtsje
 
 ## **Documentation**
 Documentación del proyecto [aquí](https://github.com/YamiGaliano/google-map/blob/32264360de2f11050ff4b33fdafd96a7c70c2de2/documents/EF-Documentacio%CC%81n.pdf)
